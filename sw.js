@@ -1,8 +1,7 @@
-var CACHE_NAME = 'version_10'
-var URLS = [               // Add URL you want to cache in this list.
-  '/',                     // If you have separate JS/CSS files,
-  '/index.html'            // add path to those files here
-]
+const CACHE_NAME = 'version_11'
+const urls = [
+  '/index.html'
+];
 
 // Respond with cached resources
 self.addEventListener('fetch', function (event) {
@@ -17,7 +16,7 @@ self.addEventListener('fetch', function (event) {
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      return cache.addAll(URLS)
+      return cache.addAll(urls);
     })
   )
 })
