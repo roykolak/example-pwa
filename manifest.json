@@ -1,6 +1,7 @@
 {
     "name": "PWA example",
     "short_name": "PWA",
+    "description": "100% score on Lighthouse",
     "lang": "en-US",
     "start_url": "/",
     "display": "standalone",
