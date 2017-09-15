@@ -1,6 +1,6 @@
 const CACHE_NAME = 'version_11'
 const urls = [
-  '/index.html'
+  'index.html'
 ];
 
 // Respond with cached resources
