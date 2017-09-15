@@ -8,6 +8,9 @@
     "theme_color": "#0275d8",
     "background_color": "#FFFFFF",
     "icons": [{
+        "src": "images/144x144.png",
+        "sizes": "144x144"
+    }, {
         "src": "images/192x192.png",
         "sizes": "192x192"
     }, {
