@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="PWA">
+        <meta name="apple-mobile-web-app-title" content="PWA">
+        <meta name="theme-color" content="#0275d8">
+        <meta name="msapplication-navbutton-color" content="#0275d8">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="msapplication-starturl" content="/index.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="/images/192x192.png">
+        <link rel="apple-touch-icon" href="/images/192x192.png">
+
+        <script>
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js').then(
+              function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope); },
+              function(err) {
+                console.log('ServiceWorker registration failed: ', err);
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <h1>Sample Progressive Webapp</h1>
+        <p>100% score on Lighthouse</p>
+    </body>
+</html>
