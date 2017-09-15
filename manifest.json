@@ -4,7 +4,7 @@
     "description": "100% score on Lighthouse",
     "lang": "en-US",
     "start_url": "/example-pwa/",
-    "display": "standalone",
+    "display": "browser",
     "theme_color": "#0275d8",
     "background_color": "#FFFFFF",
     "icons": [{
