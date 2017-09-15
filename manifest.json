@@ -3,8 +3,8 @@
     "short_name": "PWA",
     "description": "100% score on Lighthouse",
     "lang": "en-US",
-    "start_url": "/example-pwa/",
-    "display": "browser",
+    "start_url": "example-pwa",
+    "display": "standalone",
     "theme_color": "#0275d8",
     "background_color": "#FFFFFF",
     "icons": [{
